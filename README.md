@@ -32,7 +32,7 @@ This are the steps I followed to make it work
 ### Make a wifi hotspot
 
 
-Your host and client (Tablet/iPad/Other computer) need to be on the same network so create a wifi hotspot in your computer and connect your "client" to this hotspot
+Your host and client need to be on the same network so create a wifi hotspot in your computer and connect your "client" to this hotspot
 
 
 > I think this is not mandatory, you could just be connected to the same wifi network... but then you'd probably have to open your internet router to let your client come in and you'd probably face latency issues...
