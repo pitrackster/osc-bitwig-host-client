@@ -46,16 +46,20 @@ Your host and client need to be on the same network so create a wifi hotspot in 
 ![Bitwig OSC controller configuration](./assets/osc_bitwig_conf.png "Bitwig OSC controller configuration")
 
 
-### Go go go !
+### Go go go ! 
+
 
 - Launch Open Stage Control server by hiting the "play" button
 
 ![Open Stage Control launch server](./assets/osc_launch_server.png "Open Stage Control launch server")
 
-- With debug enabled you'll see some IP:PORT appearing, one of them is the one you should use to connect your client to the host (10.42.0.1:8080 in the example below)
+- Open Driven by Moss OSC template (it should be in Driven by Moss extracted folder for instance `~/Downloads/DrivenByMoss-x.x.x-Bitwig/resources/OSC/OpenStageControl4Bitwig.json`)
+
+
+- With debug enabled you'll see some IP:PORT appearing in console, one of them is the one you should use to connect your client to the host 
 
 ![Open Stage Control IPs](./assets/osc_console_ips.png "Open Stage Control IPs")
 
-- Open a webbrowser in your "client" (I used Firefox in my iPad) and enter the adress and Tada !
+- Open a webbrowser in your client (I used Firefox in my iPad) and enter the adress and Tada !
 
 ![Open Stage Control on iPad](./assets/osc_ipad_firefox.png "Open Stage Control on iPad")
