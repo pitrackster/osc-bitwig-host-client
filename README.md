@@ -1,4 +1,4 @@
-# Use a tablet to control Bitwig via Open Stage Control
+# Open Stage Control Bitwig - Client - Host
 
 > Done with ubuntu and an iPad
 
@@ -17,9 +17,9 @@ This are the steps I followed to make it work
 
 > Pay attention to the extension version according to your current Bitwig version
 
-
-- Download [Driven by Moss bitwig extension](http://www.mossgrabers.de/Software/Bitwig/Bitwig.html)  
-- Copy `DrivenByMoss.bwextension` in `{USERHOME}/Bitwig Studio/Extensions/` folder
+- Download [Driven by Moss bitwig extension](http://www.mossgrabers.de/Software/Bitwig/Bitwig.html) 
+- Unzip the downloaded archive somewhere (just remember where)
+- Copy `extrectedFolder/DrivenByMoss.bwextension` in your `{USERHOME}/Bitwig Studio/Extensions/` folder
 
 ### Install and configure Open Stage Control
 
@@ -32,10 +32,11 @@ This are the steps I followed to make it work
 ### Make a wifi hotspot
 
 
-Your host and client need to be on the same network so create a wifi hotspot in your computer and connect your "client" to this hotspot
+Your host and client need to be on the same network so create a wifi hotspot in your computer and connect your client to this hotspot
 
 
-> I think this is not mandatory, you could just be connected to the same wifi network... but then you'd probably have to open your internet router to let your client come in and you'd probably face latency issues...
+> I think this is not mandatory, you could just be connected to the same wifi network... but then you'd probably have to open your internet router to let your client enter and you'd probably face latency issues...
+
 
 ### Add a controller in Bitwig 
 
@@ -46,7 +47,7 @@ Your host and client need to be on the same network so create a wifi hotspot in 
 ![Bitwig OSC controller configuration](./assets/osc_bitwig_conf.png "Bitwig OSC controller configuration")
 
 
-### Go go go ! 
+### Here we go
 
 
 - Launch Open Stage Control server by hiting the "play" button
@@ -56,6 +57,8 @@ Your host and client need to be on the same network so create a wifi hotspot in 
 - Open Driven by Moss OSC template (it should be in Driven by Moss extracted folder for instance `~/Downloads/DrivenByMoss-x.x.x-Bitwig/resources/OSC/OpenStageControl4Bitwig.json`)
 
 
+![Open Stage Control load session](./assets/osc_open_template.png "Open Stage Control load session")
+
 - With debug enabled you'll see some IP:PORT appearing in console, one of them is the one you should use to connect your client to the host 
 
 ![Open Stage Control IPs](./assets/osc_console_ips.png "Open Stage Control IPs")
@@ -63,3 +66,13 @@ Your host and client need to be on the same network so create a wifi hotspot in 
 - Open a webbrowser in your client (I used Firefox in my iPad) and enter the adress and Tada !
 
 ![Open Stage Control on iPad](./assets/osc_ipad_firefox.png "Open Stage Control on iPad")
+
+- You might need to refresh the host / client connection just use the button shown below
+
+![Open Stage Control refresh](./assets/osc_refresh.png "Open Stage Control refresh")
+
+## Side notes
+
+- I provided my Open Stage Control config (`osc-app-default.config`)
+- You should be able to set the template to load in Open Stage Control config
+- Both Jürgen Moßgraber work regarding Bitwig extension and Jean-Emmanuel's one regarding Open Stage Control are fantastic :sparkles: :clap: :sparkles:
